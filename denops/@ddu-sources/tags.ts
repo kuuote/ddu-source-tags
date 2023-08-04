@@ -30,7 +30,7 @@ export class Source extends BaseSource<Never> {
       start: async (controller) => {
         try {
           const tagfiles = await args.denops.eval(
-            `[win_execute(${args.context.winId}, 'let l:ret = tagfiles()'), l:ret][1]`,
+            `[win_execute(${args.context.winId}, 'let l:ret = tagfiles()->map({->fnamemodify(v:val, ":p")})'), l:ret][1]`,
           );
           u.assert(tagfiles, u.isArrayOf(u.isString));
 
