@@ -51,7 +51,7 @@ export class Kind extends BaseKind<Never> {
         lineNr,
       });
     }
-    if (cmd[0] === "/") {
+    if (cmd[0] === "/" || cmd[0] === "?") {
       return Promise.resolve({
         kind: "buffer",
         path: data.filename,
