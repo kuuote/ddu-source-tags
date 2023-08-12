@@ -1,10 +1,10 @@
 import { ActionData } from "../@ddu-kinds/tag.ts";
-import * as stdpath from "https://deno.land/std@0.196.0/path/mod.ts";
+import * as stdpath from "https://deno.land/std@0.198.0/path/mod.ts";
 import {
   BaseSource,
   GatherArguments,
-} from "https://deno.land/x/ddu_vim@v3.4.4/base/source.ts";
-import { Item } from "https://deno.land/x/ddu_vim@v3.4.4/types.ts";
+} from "https://deno.land/x/ddu_vim@v3.5.0/base/source.ts";
+import { Item } from "https://deno.land/x/ddu_vim@v3.5.0/types.ts";
 import * as u from "https://deno.land/x/unknownutil@v3.4.0/mod.ts";
 
 type Never = Record<never, never>;
