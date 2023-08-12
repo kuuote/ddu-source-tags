@@ -43,8 +43,8 @@ export class Kind extends BaseKind<Never> {
   getPreviewer(args: GetPreviewerArguments): Promise<Previewer | undefined> {
     const data = args.item.action as ActionData;
     const cmd = data.cmd;
-    const lineNr = parseInt(cmd);
-    if (!isNaN(lineNr)) {
+    const lineNr = Number(cmd);
+    if (Number.isInteger(lineNr)) {
       return Promise.resolve({
         kind: "buffer",
         path: data.filename,
