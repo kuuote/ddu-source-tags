@@ -6,7 +6,7 @@ License: zlib license
 ==============================================================================
 INTRODUCTION                                    *ddu-source-tags-introduction*
 
-This source collect tag items from |'tags'| of current file.
+This |ddu-sources| collect tag items from |'tags'| of current file.
 
 ==============================================================================
 EXAMPLES                                            *ddu-source-tags-examples*

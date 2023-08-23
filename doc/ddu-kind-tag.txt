@@ -6,7 +6,7 @@ License: zlib license
 ==============================================================================
 INTRODUCTION                                       *ddu-kind-tag-introduction*
 
-This kind provides tag operations.
+This is |ddu-kinds| provide tag operations.
 
 ==============================================================================
 EXAMPLES                                               *ddu-kind-tag-examples*
